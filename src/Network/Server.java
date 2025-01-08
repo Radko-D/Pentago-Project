@@ -19,30 +19,30 @@ public class Server implements Runnable {
     /**
      * a variable of type ServerSocket to give server a server socket
      */
-    private ServerSocket serverSocket;
+    private final ServerSocket serverSocket;
     /**
      * a variable of type Thread to allow adding client handlers or removing them and checking if the server is still
      * alive
      */
-    private Thread thread;
+    private final Thread thread;
     /**
      * a variable of type List with ClientHandlers in it to have a list of client handlers
      */
-    private List<ClientHandler> clients = new ArrayList<ClientHandler>();
+    private final List<ClientHandler> clients = new ArrayList<ClientHandler>();
     /**
      * a variable of type List with queued ClientHandlers to have a list of client handlers who have queued for the
      * game itself
      */
-    private List<ClientHandler> queuedClientHandlers = new ArrayList<ClientHandler>();
+    private final List<ClientHandler> queuedClientHandlers = new ArrayList<ClientHandler>();
     /**
      * a variable of type List to house the Games which are catered to work on a server as well as with a list it
      * is possible to have multiple instances of the game running
      */
-    private List<ServerGame> games = new ArrayList<ServerGame>();
+    private final List<ServerGame> games = new ArrayList<ServerGame>();
     /**
      * a variable of type String that declares the server name
      */
-    private String serverName = "Blue-12 server";
+    private final String serverName = "Blue-12 server";
 
 
     /**

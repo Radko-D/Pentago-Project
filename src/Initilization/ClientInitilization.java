@@ -2,7 +2,7 @@ package Initilization;
 
 import GameLogic.*;
 import Network.*;
-import ss.utils.TextIO;
+import utils.TextIO;
 
 import java.io.IOException;
 import java.net.InetAddress;

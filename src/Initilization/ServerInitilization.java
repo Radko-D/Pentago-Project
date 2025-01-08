@@ -12,7 +12,7 @@ public class ServerInitilization {
         String line = "a";
         while (port > 65536) {
             System.out.println(" pick a valid port between 0-65536 ");
-            port = ss.utils.TextIO.getlnInt();
+            port = utils.TextIO.getlnInt();
         }
         try {
             server = new Server(port);
@@ -25,7 +25,7 @@ public class ServerInitilization {
             e.printStackTrace();
         }
         while (!line.equals("quit")) {
-            line = ss.utils.TextIO.getlnString();
+            line = utils.TextIO.getlnString();
             if (line.equals("quit")) {
                 server.stop();
                 break;

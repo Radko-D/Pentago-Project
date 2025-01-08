@@ -32,11 +32,11 @@ public class HumanPlayer extends Player {
                 "6 -> rotates the bottom right subboard counter-clockwise\n" +
                 "7 -> rotates the bottom right subboard clockwise";
         System.out.println(prompt + rotations);
-        String choice = ss.utils.TextIO.getlnString();
+        String choice = utils.TextIO.getlnString();
 
         while (choice.length() <= 1) { // add so it does show error eve if right amount, but so it must be int
             System.out.println(" invalid input input again");
-            choice = ss.utils.TextIO.getlnString();
+            choice = utils.TextIO.getlnString();
         }
         String[] arr = choice.split("~"); // why can't we do try here
 
@@ -48,10 +48,10 @@ public class HumanPlayer extends Player {
             System.out.println("ERROR: field " + choice
                     + " is no valid choice.");
             System.out.println(prompt);
-            choice = ss.utils.TextIO.getlnString();
+            choice = utils.TextIO.getlnString();
             while (choice.length() <= 1) {
                 System.out.println(" invalid input input again");
-                choice = ss.utils.TextIO.getlnString();
+                choice = utils.TextIO.getlnString();
             }
             arr = choice.split("~"); // why cant we do try here
             z = Integer.parseInt(arr[1]);

@@ -119,7 +119,7 @@ public class Game implements Runnable {
             reset();
             play();
             System.out.println("\n> Play another time? (y/n)?");
-            continueGame = ss.utils.TextIO.getBoolean();
+            continueGame = utils.TextIO.getBoolean();
         }
     }
 }

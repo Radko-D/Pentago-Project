@@ -12,7 +12,7 @@ public class Pentago {
         Player player1, player2;
         String name1, name2;
         System.out.println("type in computers to see computers fight or anything to 1v1 with ur friend");
-        fight = ss.utils.TextIO.getlnString();
+        fight = utils.TextIO.getlnString();
 
 
         if (fight.equals("computers")) {
@@ -20,8 +20,8 @@ public class Pentago {
             player2 = new ComputerPlayer(2);
         } else {
             System.out.println("Type ur names one by one");
-            name1 = ss.utils.TextIO.getlnString();
-            name2 = ss.utils.TextIO.getlnString();
+            name1 = utils.TextIO.getlnString();
+            name2 = utils.TextIO.getlnString();
 
             player1 = new HumanPlayer(name1, 1);
             player2 = new HumanPlayer(name2, 2);
